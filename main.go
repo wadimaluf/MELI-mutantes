@@ -29,5 +29,5 @@ func main() {
 	router.HandleFunc("/mutant", CheckMutant).Methods("POST")
 	router.HandleFunc("/stats/", GetStats).Methods("GET")
 
-	log.Fatal(http.ListenAndServe(port, router))
+	log.Fatal(http.ListenAndServe(":"+port, router))
 }
