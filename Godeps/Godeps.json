@@ -1,0 +1,12 @@
+{
+	"ImportPath": "github.com/wadimaluf/MELI-mutantes",
+	"GoVersion": "go1.11",
+	"GodepVersion": "v80",
+	"Deps": [
+		{
+			"ImportPath": "github.com/gorilla/mux",
+			"Comment": "v1.6.2-10-gdeb579d",
+			"Rev": "deb579d6e030503f430978ee229008b9bc912d40"
+		}
+	]
+}
