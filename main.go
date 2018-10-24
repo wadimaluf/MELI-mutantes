@@ -27,7 +27,7 @@ func main() {
 	router := mux.NewRouter()
 
 	router.HandleFunc("/mutant", CheckMutant).Methods("POST")
-	router.HandleFunc("/stats/", GetStats).Methods("GET")
+	router.HandleFunc("/stats", GetStats).Methods("GET")
 
 	log.Fatal(http.ListenAndServe(":"+port, router))
 }
