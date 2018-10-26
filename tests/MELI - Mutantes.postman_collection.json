@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "020e05b4-09f8-4613-a4e0-be283269936b",
+		"name": "MELI - Mutantes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Mutante",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"dna\":[\"ATGCGA\",\"CAGTGC\",\"TTATGT\",\"AGAAGG\",\"CCCCTA\",\"TCACTG\"]\n}"
+				},
+				"url": {
+					"raw": "https://damp-hamlet-39557.herokuapp.com/mutant/",
+					"protocol": "https",
+					"host": [
+						"damp-hamlet-39557",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"mutant",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "No Mutante",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"dna\":[\"ATGCGA\",\"CAGTGC\",\"TTATTT\",\"AGACGG\",\"GCGTCA\",\"TCACTG\"]\n}"
+				},
+				"url": {
+					"raw": "https://damp-hamlet-39557.herokuapp.com/mutant/",
+					"protocol": "https",
+					"host": [
+						"damp-hamlet-39557",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"mutant",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
